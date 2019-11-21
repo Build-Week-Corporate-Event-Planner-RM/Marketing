@@ -1,40 +1,43 @@
 // Navigation Styles here
 
-
 header {
-    margin: 20px 0; 
-    padding: 20px 0;    
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
- 
-  
-    @media ( max-width: 500px ) {
-            flex-direction: column;
-            align-items: center;
-            margin: auto;
-            }
-  
-    h2 {
-      font-size: 2rem;
-      color: black;
-  
-      @media ( max-width: 500px ) {
-            margin-bottom: 15px;
-            font-size: 1rem;
-            }
-        }
-  
-  nav {
-      margin-left: 62px;
-      @media ( max-width: 500px ) {
-            margin-left: 0;
-            }
-  
-      a {
-        margin-left: 20px;
-        font-size: 1.7rem;
-      }
-    }
+  margin: 20px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media ( max-width: 500px ) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
 }
 
+header h4 {
+  font-size: 2rem;
+  color: black;
+}
+@media ( max-width: 500px ) {
+  header h4 {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+}
+
+header nav {
+  margin-left: 62px;
+}
+@media ( max-width: 500px ) {
+  header nav {
+    margin-left: 0;
+  }
+}
+
+header nav a {
+  margin-left: 20px;
+  font-size: 1.7rem;
+  color: rgb(119, 163, 132);
+  font-family: 'Playfair Display', cursive;
+}

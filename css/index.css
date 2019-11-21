@@ -141,7 +141,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Playfair Display', cursive;
 }
 h1 {
   font-size: 4rem;
@@ -151,12 +151,12 @@ h2 {
   padding-bottom: 10px;
 }
 h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
+  font-size: 1.7rem;
+  padding-bottom: 15px;
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding-bottom: 10px;
 }
 img {
@@ -166,95 +166,8 @@ img {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;}
-
-.footer {
-  width: 100%;
-  border-top: 2px dashed silver;
-  background: blue
+  margin: 0 auto;
 }
-.footer p {
-  text-align: center;
-  color: #212529;
-  font-size: 1.6rem;
-  padding: 20px;
-}
-.home .welcome {
-  margin: 0 auto 30px auto;
-}
-@media ( max-width: 500px ) {
-  .home .welcome {
-    width: 75%;
-    margin: 0 auto 30px;
-  }
-}
-.home .welcome img {
-  margin-bottom: 30px;
-  margin-top: -5px;
-}
-
-
-
-
-.home .content-pick {
-  padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid red;
-
-}
-@media ( max-width: 500px ) {
-  .home .content-pick {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.home .content-pick .destination {
-  width: 30%;
-  margin-bottom: 30px;
-  border: 2px solid green;
-}
-@media ( max-width: 500px ) {
-  .home .content-pick .destination {
-    width: 75%;
-    margin: 0 auto 30px;
-  }
-}
-
-.home .content-pick .destination2 {
-  width: 100%;
-  margin-bottom: 30px;
-  border: 2px solid blue;
-}
-@media ( max-width: 500px ) {
-  .home .content-pick .destination2 {
-    width: 75%;
-    margin: 0 auto 30px;
-  }
-}
-
-.home .btn {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  cursor: pointer;
-  width: 85%;
-  font-size: 2.5rem;
-  border-radius: 10px;
-  color: #212529;
-  background-color: #17A2B8;
-}
-@media ( max-width: 500px ) {
-  .home .btn {
-    width: 100%;
-  }
-
-
-}
-
-
-
 header {
   margin: 20px 0;
   padding: 20px 0;
@@ -262,19 +175,19 @@ header {
   justify-content: space-between;
   width: 100%;
 }
-@media ( max-width: 500px ) {
+@media (max-width: 500px) {
   header {
     flex-direction: column;
     align-items: center;
     margin: auto;
   }
 }
-header h2 {
+header h4 {
   font-size: 2rem;
   color: black;
 }
-@media ( max-width: 500px ) {
-  header h2 {
+@media (max-width: 500px) {
+  header h4 {
     margin-bottom: 15px;
     font-size: 1rem;
   }
@@ -282,7 +195,7 @@ header h2 {
 header nav {
   margin-left: 62px;
 }
-@media ( max-width: 500px ) {
+@media (max-width: 500px) {
   header nav {
     margin-left: 0;
   }
@@ -290,4 +203,107 @@ header nav {
 header nav a {
   margin-left: 20px;
   font-size: 1.7rem;
+  color: #77a384;
+  font-family: 'Playfair Display', cursive;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #77a384;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 0.5px;
+}
+.footer div {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 0.5px;
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+.footer h4 {
+  text-align: center;
+}
+.home .welcome {
+  margin: 0 auto 15px auto;
+}
+.home .welcome h2 {
+  margin: 0 auto 15px auto;
+  color: #77a384;
+}
+.home .welcome p {
+  margin: 0 auto 15px auto;
+  color: black;
+}
+@media (max-width: 500px) {
+  .home .welcome {
+    width: 75%;
+    margin: 0 auto 15px;
+  }
+}
+.home .main-content {
+  padding-top: 1px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+  border: dashed 2px #77a384;
+}
+@media (max-width: 500px) {
+  .home .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.home .main-content .blocks {
+  width: 32%;
+  margin-bottom: 5px;
+  border: 0.05px dashed white;
+  padding: 5px;
+}
+.home .main-content .blocks .block1 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.home .main-content .blocks .block2 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .main-content .blocks {
+    width: 75%;
+    margin: 0 auto 30px;
+  }
+}
+@media (max-width: 500px) {
+  .home .main-content .block1 {
+    width: 75%;
+    margin: 0 auto 30px;
+  }
+}
+@media (max-width: 500px) {
+  .home .main-content .block2 {
+    width: 75%;
+    margin: 0 auto 30px;
+  }
+}
+.home .btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100%;
+  font-size: 2.5rem;
+  border-radius: 15px;
+  color: black;
+  background-color: #ceac57;
+}
+@media (max-width: 500px) {
+  .home .btn .btn {
+    width: 100%;
+  }
 }
