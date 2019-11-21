@@ -1,3 +1,14 @@
+.custom-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(47, 88, 13, 0.774);
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -107,10 +118,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -162,6 +169,8 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 .container {
   max-width: 800px;
@@ -247,10 +256,10 @@ header nav a {
 }
 .home .main-content {
   padding-top: 1px;
+  margin-bottom: -7px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
-  border: dashed 2px #77a384;
 }
 @media (max-width: 500px) {
   .home .main-content {
@@ -261,7 +270,7 @@ header nav a {
 .home .main-content .blocks {
   width: 32%;
   margin-bottom: 5px;
-  border: 0.05px dashed white;
+  border: 0.07px dashed silver;
   padding: 5px;
 }
 .home .main-content .blocks .block1 {
@@ -295,15 +304,26 @@ header nav a {
   justify-content: center;
   text-align: center;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 25px;
   width: 100%;
   font-size: 2.5rem;
   border-radius: 15px;
   color: black;
-  background-color: #ceac57;
+  background-color: rgba(47, 88, 13, 0.774);
 }
 @media (max-width: 500px) {
   .home .btn .btn {
     width: 100%;
   }
+}
+.btn2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(47, 88, 13, 0.774);
 }
