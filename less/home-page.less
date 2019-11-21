@@ -19,6 +19,7 @@
       }
   
 
+
   .main-content {
     padding-top: 1px;
     margin-bottom: -7px;
@@ -27,53 +28,49 @@
     justify-content: space-between;
    // border: dashed 2px  @sand;
     
+   .blocks {
+      width: 32%;
+      margin-bottom: 5px;
+      border: 0.07px dashed silver;
+      padding: 5px;
+    
+      .block1{
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .block2{
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
   }
+
+
     @media ( max-width: 500px ) {
       .main-content {
         display: flex;
         flex-direction: column;
+
+        .blocks {
+          width: 75%;
+          margin: 0 auto 30px;
+        }
+
+        .block1 {
+          width: 75%;
+          margin: 0 auto 30px;
+        }
+
+        .block2 {
+          width: 75%;
+          margin: 0 auto 30px;
+        }
       }
     }
   
 
-  .main-content .blocks {
-    width: 32%;
-    margin-bottom: 5px;
-    border: 0.07px dashed silver;
-    padding: 5px;
-    
-    .block1{
-      width: 100%;
-      margin-bottom: 15px;
-    }
-
-    .block2{
-      width: 100%;
-      margin-bottom: 10px;
-         }
-  }
-    
-    @media ( max-width: 500px ) {
-      .main-content .blocks {
-        width: 75%;
-        margin: 0 auto 30px;
-      }
-    }
-
-    @media ( max-width: 500px ) {
-      .main-content .block1 {
-       width: 75%;
-       margin: 0 auto 30px;
-     }
-    }
-
-    @media ( max-width: 500px ) {
-      .main-content .block2 {
-        width: 75%;
-        margin: 0 auto 30px;
-    }
- }
-
+  
   .btn {
     display: flex;
     justify-content: center;
@@ -93,13 +90,22 @@
     }
   } 
 
+  .btn:hover {
+     color: black;
+    background-color: white;
+  } 
 
 } // home
 
 
-// Codes for about page start here
 
+// Codes for about page start here
 
 .btn2 {
 .custom-btn()
 }
+
+.btn2:hover {
+  color: black;
+ background-color: white;
+} 
